@@ -22,12 +22,11 @@ public class Solution {
 
                 if(token[i].Equals("+")){
                     answer += Convert.ToInt32(token[i + 1]);
-                    Console.WriteLine("op 연산 후 answer는 {0}\n", answer);
                 }
                 else if(token[i].Equals("-")){
                     answer -= Convert.ToInt32(token[i + 1]);
-                    Console.WriteLine("op 연산 후 answer는 {0}\n", answer);
-                }                
+                }
+                Console.WriteLine("op 연산 후 answer는 {0}\n", answer);
             }
         }
     return answer;   
