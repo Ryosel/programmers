@@ -9,7 +9,7 @@ string solution(int age) {
     
     for(int i = 0; i < age_str.size(); i++){
         switch(age_str[i]){
-            case '0': answer.push_back('a'); break;
+            case '0': answer += 'a'; break;
             case '1': answer.push_back('b'); break;
             case '2': answer.push_back('c'); break;
             case '3': answer.push_back('d'); break; 
