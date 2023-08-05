@@ -6,11 +6,10 @@ int main(void) {
     int n;
     cin >> n;
     
-    string answer = "";
+    char star = '*';
     
     for(int i = 1; i <= n; i++){
-        answer += '*';
-        cout << answer << endl;
+        cout << string(i, star) << endl;
     }
     return 0;
 }
