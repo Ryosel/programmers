@@ -1,24 +1,16 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
-#include <stdlib.h>
-
-#pragma warnings(disable: 4996)
 
 int main() {
-    int n = 0;
     int num = 0;
-    int ans = 0;
-    scanf("%d", &n);
+    int sum = 0;
+    scanf("%d", &num);
 
-    char str[100];
-    scanf("%s", &str);
-    //sprintf(str, "%d", num);
-    
-    for (int i = 0; i < n; i++) {
-        ans += str[i] - '0';
-        //printf("%d \n", ans);
+    char temp[num+1];
+    scanf("%s", temp);
+    for(int i = 0; i < num; i++){
+        sum += temp[i] - '0';
+        //printf("%d\n", sum);
     }
-    printf("%d", ans);
+    printf("%d", sum);
     return 0;
 }
