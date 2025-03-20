@@ -1,11 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n = 0, m = 0;
-    cin >> n >> m;
-    if(n < m) cout << "<";
-    else if(n > m) cout << ">";
-    else if(n == m) cout << "==";
+int main(){
+    int a, b;
+
+    cin >> a >> b;
+    
+    if(a > b)
+        cout << ">" << endl;
+    else if(a < b)
+        cout << "<" << endl;
+    else if(a == b)
+        cout << "==" << endl;
+    
     return 0;
 }
