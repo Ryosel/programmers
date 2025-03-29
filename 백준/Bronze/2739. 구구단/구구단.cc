@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n = 0;
+int main(){
+    int n;
     cin >> n;
-    for(int i = 1; i < 10; i++){
-        cout << n << " * " << i << " = " << n * i << "\n";
+    for(int i = 1; i <= 9; i++){
+        cout << n << " * " << i << " = " << n*i << "\n";
     }
     return 0;
 }
